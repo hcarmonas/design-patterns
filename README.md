@@ -1,6 +1,6 @@
 # Design Patterns no Frontend
 
-Este repositório contém uma introdução aos principais Design Patterns aplicados ao desenvolvimento frontend com Vue.js 3 e Nuxt 3, com foco nos padrões **Observer**, **Builder**, **Proxy** e **Singleton**.
+Este repositório contém uma introdução aos principais Design Patterns aplicados ao desenvolvimento frontend com Vue.js 3, com foco nos padrões **Observer**, **Builder**, **Proxy** e **Singleton**.
 
 ## O que é um Design Pattern?
 
@@ -32,13 +32,13 @@ No frontend, os Design Patterns ajudam a resolver desafios específicos da inter
 
 ### Exemplos de Design Patterns no Frontend
 
-1. **Observer**: No frontend, ajuda a gerenciar mudanças de estado. Por exemplo, quando um componente de carrinho de compras é atualizado, a atualização pode ser observada por componentes que mostram o número de itens no carrinho. [Veja o exemplo de Builder](./types/Oberserver.md)
+1. **Observer**: No frontend, ajuda a gerenciar mudanças de estado. Por exemplo, quando um componente de carrinho de compras é atualizado, a atualização pode ser observada por componentes que mostram o número de itens no carrinho. [Veja o exemplo de Observer](./types/Oberserver.md)
    
-2. **Singleton**: Facilita a criação de instâncias únicas para configurações ou serviços globais, como o tema ou idioma da aplicação. [Veja o exemplo de Builder](./types/Singleton.md)
+2. **Singleton**: Facilita a criação de instâncias únicas para configurações ou serviços globais, como o tema ou idioma da aplicação. [Veja o exemplo de Singleton](./types/Singleton.md)
 
 3. **Builder**: Útil para construir componentes com diferentes configurações de forma modular e reutilizável, como cards ou formulários complexos que mudam de acordo com a necessidade. [Veja o exemplo de Builder](./types/Builder.md)
 
-4. **Proxy**: Garante um ponto central para adicionar regras de autenticação e outros ajustes em chamadas de API, garantindo que a comunicação com o backend esteja sempre dentro das especificações. [Veja o exemplo de Builder](./types/Proxy.md)
+4. **Proxy**: Garante um ponto central para adicionar regras de autenticação e outros ajustes em chamadas de API, garantindo que a comunicação com o backend esteja sempre dentro das especificações. [Veja o exemplo de Proxy](./types/Proxy.md)
 
 ---
 

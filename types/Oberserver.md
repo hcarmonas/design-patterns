@@ -1,6 +1,6 @@
 # Observer (Observador)
 
-O Observer é um padrão que segue o princípio de "notificar". Imagine uma professora em uma sala cheia de alunos. Se ela mudar algo no quadro, ela vai avisar todos para que prestem atenção. Aqui, a professora é o "sujeito" (ou "observável"), e os alunos são os "observadores". Sempre que o quadro muda, todos os alunos (observadores) são notificados dessa mudança.
+O **Observer** é um padrão que segue o princípio de "notificar". Imagine uma professora em uma sala cheia de alunos. Se ela mudar algo no quadro, ela vai avisar todos para que prestem atenção. Aqui, a professora é o "sujeito" (ou "observável"), e os alunos são os "observadores". Sempre que o quadro muda, todos os alunos (observadores) são notificados dessa mudança.
 
 ## Como funciona o Observer na programação:
 
@@ -17,12 +17,12 @@ Quando você tem uma situação onde várias partes do seu sistema precisam ser 
 
 ## Observer (Observador) no Vue.js 3
 
-No Vue, o padrão Observer é bastante útil para lidar com notificações e mudanças de estado entre componentes. Podemos usar o sistema de eventos do Vue ou um store (como o Vuex ou o Pinia) para implementar o Observer.
+No Vue, o padrão **Observer** é bastante útil para lidar com notificações e mudanças de estado entre componentes. Podemos usar o sistema de eventos do Vue ou um store (como o Vuex ou o Pinia) para implementar o **Observer**.
 
 ### Exemplo:
 Imagine uma aplicação de chat onde você tem vários componentes que precisam ser atualizados quando chega uma nova mensagem.
 
-Sujeito (observável): O backend de mensagens ou um store onde as mensagens são armazenadas.  
+**Sujeito (observável)**: O backend de mensagens ou um store onde as mensagens são armazenadas.  
 Observadores: Componentes de chat na interface que exibem as mensagens.  
 
 #### Implementação no Vue:  
@@ -60,4 +60,4 @@ watch(messages, (newMessages) => {
 ```  
 Aqui, watch é o "Observador", e o estado messages é o "Sujeito". Quando o estado messages muda, todos os componentes que estão observando essa propriedade serão notificados.
 
-[Voltar](../DesignPatterns.md)
+[Voltar](../README.md)
