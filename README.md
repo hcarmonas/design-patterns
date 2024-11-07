@@ -8,9 +8,9 @@ Um **Design Pattern** (ou Padrão de Design) é uma solução reaplicável para 
 
 Esses padrões não são instruções ou um código específico, mas sim modelos que guiam a criação de estruturas de código flexíveis e reutilizáveis. No frontend, padrões de design são extremamente úteis para gerenciar a complexidade crescente de aplicativos interativos e dinâmicos.
 
-### Por que utilizar Design Patterns?
+## Por que utilizar Design Patterns?
 
-Ao usar Design Patterns, você:
+### Ao usar Design Patterns, você:
 
 1. **Evita a repetição de soluções**: Ao invés de "reinventar a roda", você aproveita soluções que já foram testadas e comprovadas.
 2. **Garante melhor organização do código**: Com padrões bem definidos, o código se torna mais estruturado e modular.
@@ -30,7 +30,7 @@ No frontend, os Design Patterns ajudam a resolver desafios específicos da inter
 
 4. **Reutilização de componentes e lógica**: Padrões como *Builder* permitem configurar e reutilizar componentes com configurações diferentes. Isso é valioso no frontend, onde componentes podem ter muitas variações de aparência e comportamento para atender a diferentes partes da interface.
 
-### Exemplos de Design Patterns no Frontend
+## Exemplos de Design Patterns no Frontend
 
 1. **Observer**: No frontend, ajuda a gerenciar mudanças de estado. Por exemplo, quando um componente de carrinho de compras é atualizado, a atualização pode ser observada por componentes que mostram o número de itens no carrinho. [Veja o exemplo de Observer](./types/Oberserver.md)
    
@@ -42,6 +42,24 @@ No frontend, os Design Patterns ajudam a resolver desafios específicos da inter
 
 ---
 
-### Conclusão
+## Conclusão
 
 Os Design Patterns são ferramentas poderosas para qualquer desenvolvedor de frontend. Eles ajudam a resolver problemas comuns, garantir qualidade e organização no código e tornar a interface mais fácil de manter e escalar. No desenvolvimento de interfaces complexas e interativas, adotar esses padrões pode fazer a diferença entre um código confuso e um código limpo e fácil de expandir.
+
+### Resumo das diferenças entre eles
+
+- **Observer**: O foco é na notificação. Ele é útil quando você quer que uma mudança em um objeto notifique automaticamente outros objetos.
+- **Builder**: O foco é na construção passo a passo de objetos complexos. É usado para montar objetos com muitos detalhes, opções ou configurações.
+- **Proxy**: O foco é em controlar o acesso a outro objeto. Ele age como um intermediário que filtra ou simplifica o acesso a algo mais complicado ou sensível.
+- **Singleton**: O foco é em garantir uma única instância de um objeto. Ele é usado quando só pode haver uma versão daquele objeto ao longo de todo o sistema.
+
+Esses padrões são muito úteis em várias situações e ajudam a tornar o código mais organizado, reutilizável e seguro!
+
+### Resumo das aplicações dos padrões no frontend com Vue.js 3 e Nuxt 3
+
+- **Observer**: Use watch ou um store como Pinia para que vários componentes possam ser notificados de mudanças de estado.
+- **Builder**: Use o Builder para criar objetos de configuração complexos para componentes personalizáveis.
+- **Proxy**: Utilize Proxy para controlar chamadas de API, adicionar autenticação e outras regras de acesso, evitando que os componentes precisem lidar com esses detalhes.
+- **Singleton**: Crie instâncias únicas de objetos de configuração ou estado global que devem ser consistentes em toda a aplicação.
+
+Esses padrões ajudam a estruturar melhor o código Vue.js 3 e Nuxt 3, tornando a manutenção e a escalabilidade da aplicação mais fáceis de gerenciar.
